@@ -1,0 +1,23 @@
+{
+  "name": "droid-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bin/www.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.4",
+    "jade": "^1.7.0",
+    "nconf": "^0.7.1",
+    "require-all": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-browserify": "^0.5.0",
+    "gulp-develop-server": "^0.2.5",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.2.4",
+    "gulp-sourcemaps": "^1.2.8"
+  }
+}

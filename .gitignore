@@ -1,0 +1,6 @@
+.project
+node_modules/
+.idea/
+*.log
+public/components/
+public/build/
