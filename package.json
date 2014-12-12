@@ -4,10 +4,15 @@
   "description": "",
   "main": "bin/www.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abukurov/droid-ui.git"
+  },
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.4",
     "jade": "^1.7.0",
+    "lodash": "^2.4.1",
     "nconf": "^0.7.1",
     "require-all": "^1.0.0"
   },
