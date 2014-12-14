@@ -1,7 +1,18 @@
 mixin device
   .htc-one.centered
-    .top-bar
     .camera
     .sensor
     .speaker.top
     .speaker.bottom
+    .top-bar
+      .display
+        ul.widget-list(list-dnd="widgets")
+          li(ng-repeat="widget in widgets", style="list-style:none")
+            widget(
+              dynamic-widget="widget.type",
+              ng-click="onWidgetSelect($index)",
+              list-item-dnd="{{ widget }}",
+              list-item-dnd-moved="onWidgetMoved($index)",
+              list-item-dnd-hide=true,
+              model="widget"
+            ) {{ widget.value }}
