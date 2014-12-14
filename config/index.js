@@ -6,7 +6,7 @@ var nconf = require('nconf');
 nconf.use('memory');
 
 nconf.defaults({
-  port: 8082
+  port: 8084
 });
 
 module.exports = nconf;
