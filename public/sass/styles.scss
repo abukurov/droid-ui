@@ -1,7 +1,11 @@
 @import "../components/normalize-scss/normalize";
 @import "./variables";
 @import "../../widgets/textfield/styles";
+@import "../../widgets/listview/styles";
 
+body {
+  font-size: 12px;
+}
 body, body * {
   box-sizing: border-box;
 }

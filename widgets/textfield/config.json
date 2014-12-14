@@ -12,6 +12,7 @@
   "inputType": {
     "name": "Input type",
     "type": "select",
+    "defaultValue": "text",
     "options": [{
       "name": "text",
       "value": "text"

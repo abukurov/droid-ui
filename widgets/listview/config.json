@@ -7,6 +7,7 @@
   "tpl": {
     "name": "Template",
     "type": "select",
+    "defaultValue": "basic",
     "options": [{
       "name": "basic", "value": "basic"
     }, {

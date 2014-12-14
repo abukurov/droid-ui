@@ -4,14 +4,15 @@
   padding: 0.6em;
   min-height: 2.5em;
   .label {
-    border-bottom: 1px solid $android_border_color;
+    border-bottom: 1px solid $android-primary-color;
     display: block !important;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: $android_border_color;
-    font-size: 13px;
+    color: $android-primary-color;
+    font-size: 1.1em;
+    font-weight: bold;
     text-transform: uppercase;
     padding: 0.3em;
   }
@@ -21,10 +22,10 @@
     padding: 0;
     .input-border {
       border: 1px solid;
-      border-color: transparent $android_outer_border_color $android_outer_border_color $android_outer_border_color;
+      border-color: transparent $android-light-border-color $android-light-border-color $android-light-border-color;
       left: 1px;
       right: 1px;
-      background: $android_background_color;
+      background: transparent;
       content: '';
       position: absolute;
       bottom: 0;
@@ -38,14 +39,14 @@
       min-height: 2.5em;
       border-width: 0;
       -webkit-appearance: none;
-      color: white;
-      -webkit-text-fill-color: white !important;
+      color: $android-text-color;
+
       &:focus {
         outline: none;
       }
 
       &:focus + .input-border {
-        border-color: transparent $android_border_color $android_border_color $android_border_color;
+        border-color: transparent $android-primary-color $android-primary-color $android-primary-color;
       }
     }
   }
