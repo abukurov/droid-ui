@@ -16,6 +16,9 @@ module.exports = angular.module('controllers', [])
       });
 
     $scope.widgets = [];
+    $scope.deviceColor = 'silver';
+    $scope.landscape = false;
+
     $scope.onWidgetMoved = function (index) {
       $scope.widgets.splice(index, 1);
     };

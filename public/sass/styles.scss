@@ -63,23 +63,24 @@ body, body * {
 }
 
 .controls {
-  font-size: 2em;
+  font-size: 3em;
+  padding: 0.3em;
   display: inline-block;
   position: fixed;
   right: 300px;
 
   .rotation {
-    color: $android-light-border-color;
+    color: #2C3E50;
   }
 
   .colors {
 
     .silver {
-      color: $android_device_color_silver;
+      color: #bebebe;
     }
 
-    .grey {
-      color: $android_device_color_grey;
+    .gray {
+      color: #6F6F6F;
     }
   }
 
