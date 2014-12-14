@@ -1,0 +1,19 @@
+{
+  "separator": {
+    "name": "Space",
+    "defaultValue": "15",
+    "type": "text"
+  },
+  "units": {
+    "name": "Units",
+    "defaultValue": "px",
+    "type": "select",
+    "options": [{
+      "name": "pixels",
+      "value": "px"
+    }, {
+      "name": "percents",
+      "value": "%"
+    }]
+  }
+}
