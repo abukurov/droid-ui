@@ -8,8 +8,9 @@ block content
         ) 5
         ul(list-dnd="widgets")
             li(ng-repeat="widget in widgets")
-                div(
+                widget(
+                    dynamic-widget="widget.type",
                     list-item-dnd="{{ widget }}",
                     list-item-dnd-moved="onWidgetMoved($index)",
                     list-item-dnd-hide=true
-                ) {{widget}}
+                ) {{ widget.value  }}
