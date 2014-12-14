@@ -1,0 +1,16 @@
+.field {
+  padding: 0.6em;
+  min-height: 2.5em;
+  .text-value {
+    border-bottom: 1px solid $android_border_color;
+    display: block !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $android_border_color;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0.3em;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "value": {
+    "name": "text value",
+    "defaultValue": "some text",
+    "type": "text"
+  }
+}
