@@ -1,11 +1,11 @@
+include ./configuration
+
 mixin side-bar
   .side-bar
     .panel
-      .panel-head Title
+      .panel-head Widgets
       .panel-body
-        ul
-          li Item1
-          li Item2
-          li Item3
-          li Item4
-          li Item5
+        ul.all-widgets
+          li(ng-repeat="widget in allWidgets")
+            div(list-item-dnd="{{widget}}") {{ widget.type}}
+    +config()

@@ -43,7 +43,7 @@ module.exports = angular.module('drag-and-drop', [])
   .directive('listDnd', ['$timeout', 'listDndDragHelper',
     function ($timeout, listDndDragHelper) {
       return function (scope, element, attr) {
-        var placeholder = angular.element('<li class="component-placeholder"></li>');
+        var placeholder = angular.element('<li class="widget-placeholder"></li>');
         var placeholderNode = placeholder[0];
         var listNode = element[0];
 
