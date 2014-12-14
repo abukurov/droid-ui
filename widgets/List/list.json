@@ -1,0 +1,7 @@
+{
+  "List": {
+    "name": "label text",
+    "defaultValue": "value",
+    "type": "select"
+  }
+}
