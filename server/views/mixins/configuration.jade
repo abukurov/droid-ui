@@ -1,7 +1,10 @@
 mixin config()
-  ul(ng-if="selectedWidget")
-    li(ng-repeat="(fieldName, config) in selectedWidget.config")
-      label {{fieldName}}
-        input(ng-if="config.type === 'text'", ng-model="selectedWidget.model[fieldName]")
-        select(ng-if="config.type === 'select'", ng-model="selectedWidget.model[fieldName]")
-          option(ng-repeat="option in config.options", value="{{option.value}}") {{option.name}}
+  .panel(ng-if="selectedWidget")
+    .panel-head Widget configuration
+    .panel-body
+      ul
+        li(ng-repeat="(fieldName, config) in selectedWidget.config")
+            label.label {{config.name}}
+            input.input(ng-if="config.type === 'text'", ng-model="selectedWidget.model[fieldName]")
+            select.input(ng-if="config.type === 'select'", ng-model="selectedWidget.model[fieldName]")
+              option(ng-repeat="option in config.options", value="{{option.value}}") {{option.name}}
