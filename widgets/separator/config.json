@@ -9,11 +9,11 @@
     "defaultValue": "px",
     "type": "select",
     "options": [{
-      "name": "pixels",
+      "name": "px",
       "value": "px"
     }, {
-      "name": "percents",
-      "value": "%"
+      "name": "em",
+      "value": "em"
     }]
   }
 }
