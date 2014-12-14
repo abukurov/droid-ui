@@ -1,4 +1,16 @@
 extends _layout
 
 block content
-    | Hello world
+    div(ng-controller="mockup")
+        | Hello, {{ name }}
+        div(
+            list-item-dnd="5",
+        ) 5
+        ul(list-dnd="widgets")
+            li(ng-repeat="widget in widgets")
+                widget(
+                    dynamic-widget="widget.type",
+                    list-item-dnd="{{ widget }}",
+                    list-item-dnd-moved="onWidgetMoved($index)",
+                    list-item-dnd-hide=true
+                ) {{ widget.value  }}

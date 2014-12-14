@@ -3,4 +3,10 @@
 var _ = require('lodash');
 var angular = require('angular');
 
-angular.module('droid-ui', []);
+var requirements = [];
+
+requirements.push(require('./controllers/controllers'));
+requirements.push(require('./directives/drang-and-drop'));
+requirements.push(require('./directives/widget'));
+
+angular.module('droid-ui', _.map(requirements, _.property('name')));
