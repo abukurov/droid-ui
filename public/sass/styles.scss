@@ -1,7 +1,8 @@
 @import "../components/normalize-scss/normalize";
-//@import "../components/font-awesome/scss/font-awesome";
 @import "./mixins";
 @import "./variables";
+
+@import "../components/foundation-icon-fonts/foundation-icons";
 
 @import "./device";
 @import "./side-bar";
@@ -52,4 +53,27 @@ body, body * {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004abce7', endColorstr='#00000000',GradientType=0 );
 
   }
+}
+
+.controls {
+  font-size: 2em;
+  display: inline-block;
+  position: fixed;
+  right: 300px;
+
+  .rotation {
+    color: $android-light-border-color;
+  }
+
+  .colors {
+
+    .silver {
+      color: $android_device_color_silver;
+    }
+
+    .grey {
+      color: $android_device_color_grey;
+    }
+  }
+
 }
