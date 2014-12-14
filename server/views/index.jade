@@ -11,24 +11,12 @@ block content
     +side-bar()
 
     .controls
-      .rotation
+      .rotation(ng-click="landscape = !landscape")
         i.fi-refresh
       .colors
-        .silver
+        .silver(ng-click="deviceColor='silver'")
           i.fi-burst
-        .grey
+        .gray(ng-click="deviceColor='gray'")
           i.fi-burst
 
     +side-bar()
-
-    div(
-      list-item-dnd="5",
-    ) 5
-    ul(list-dnd="widgets")
-      li(ng-repeat="widget in widgets")
-        widget(
-          dynamic-widget="widget.type",
-          list-item-dnd="{{ widget }}",
-          list-item-dnd-moved="onWidgetMoved($index)",
-          list-item-dnd-hide=true
-        ) {{ widget.value  }}

@@ -1,5 +1,8 @@
 mixin device
-  .htc-one.centered
+  .htc-one.centered(
+    class="{{deviceColor}}",
+    ng-class="{landscape: landscape}"
+  )
     .camera
     .sensor
     .speaker.top
