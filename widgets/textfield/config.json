@@ -9,7 +9,7 @@
     "defaultValue": "",
     "type": "text"
   },
-  "type": {
+  "inputType": {
     "name": "Input type",
     "type": "select",
     "options": [{

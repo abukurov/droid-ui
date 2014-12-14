@@ -16,6 +16,12 @@ module.exports = angular.module('controllers', [])
         value: '3'
       }];
 
+        $scope.model = {
+            inputType: 'text',
+            placeholder: 'some',
+            value: 'value',
+            labelText: 'label'
+        };
       $scope.onWidgetMoved = function (index) {
         $scope.widgets.splice(index, 1)
       };
