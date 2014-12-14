@@ -1,7 +1,17 @@
 @import "../components/normalize-scss/normalize";
+@import "./mixins";
 @import "./variables";
 @import "../../widgets/textfield/styles";
+@import "./device";
 
 body, body * {
   box-sizing: border-box;
+}
+
+.device-wrapper {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

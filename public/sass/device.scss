@@ -1,0 +1,181 @@
+
+
+.htc-one {
+  position: relative;
+  min-width: 320px;
+  width: 48%;
+  max-width: 48vmin;
+  border: 4px solid #bebebe;
+  @include border-radius(34px);
+  @include transition(background, 0.2s, ease-in-out);
+
+  &.silver {
+    background: #ECECEC;
+  }
+
+  &.grey {
+    background: #8E8E8E;
+  }
+
+  &.centered {
+    margin: 0 auto;
+    position: relative;
+//    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    padding-top: 200%;
+  }
+
+  .top-bar {
+    width: 100%;
+    height: 85.4%;
+    position: absolute;
+    background: black;
+    top: 7.3%;
+    z-index: 1;
+
+    .display {
+      position: absolute;
+      background: #323232;
+      z-index: 10;
+      width: 88.4%;
+      height: 92%;
+      left: 5.8%;
+      top: 3.4%;
+    }
+  }
+
+  .speaker {
+    height: 2.2%;
+    width: 58.4%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20.8%;
+    background: radial-gradient(#343434 25%, transparent 50%) 0 0, radial-gradient(#343434 25%, transparent 50%) 4px 4px;
+    background-size: 2.5% 25%;
+    background-position: top left;
+
+    &.top {
+      top: 3%;
+    }
+    &.bottom {
+      bottom: 3%;
+    }
+  }
+
+  .camera {
+    display: block;
+    position: absolute;
+
+    top: 2.4%;
+    right: 10.27%;
+    background: #3c3d3d;
+    border-radius: 100%;
+    width: 6.5%;
+    height: 0;
+    padding-bottom: 6.5%;
+    z-index: 3;
+
+    &:before {
+      width: 33%;
+      height: 33%;
+      background: black;
+      border-radius: 100%;
+      position: absolute;
+      content: '';
+      top: 33%;
+      left: 33%;
+    }
+  }
+
+  .sensor {
+    display: block;
+    position: absolute;
+    top: 3.9%;
+    left: 16.2%;
+    background: #3c3d3d;
+    border-radius: 100%;
+    width: 2.4%;
+    height: 0;
+    padding-bottom: 2.4%;
+    z-index: 3;
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      right: 150%;
+      background: inherit;
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+  }
+
+  &.landscape {
+    width: 96%;
+    max-width: 96vmin;
+    min-width: 640px;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-top: 50%;
+    }
+
+    .top-bar {
+      height: 100%;
+      width: 85.4%;
+      left: 7.3%;
+      top: 0;
+      z-index: 1;
+
+      .display {
+        height: 88.4%;
+        width: 92%;
+        top: 5.8%;
+        left: 4.6%;
+      }
+
+    }
+
+    .speaker {
+      top: 20.8%;
+      height: 58.4%;
+      width: 2.2%;
+      background-size: 25% 2.5%;
+      &.top {
+        left: 94.8%;
+      }
+      &.bottom {
+        left: 3%;
+      }
+    }
+
+    .camera {
+      right: 2.4%;
+      width: 3.25%;
+      top: 84.35%;
+      height: 0;
+      padding-bottom: 3.25%;
+    }
+
+    .sensor {
+      left: 94.7%;
+      top: 16.2%;
+      width: 1.2%;
+      padding-bottom: 1.2%;
+
+      &:after {
+        bottom: 150%;
+        right: 0;
+      }
+    }
+  }
+}
