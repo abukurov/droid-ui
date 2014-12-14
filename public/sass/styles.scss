@@ -1,9 +1,15 @@
 @import "../components/normalize-scss/normalize";
-@import "./mixins";
 @import "./variables";
-@import "../../widgets/textfield/styles";
+@import "./mixins";
+
 @import "./device";
 
+@import "../../widgets/textfield/styles";
+@import "../../widgets/listview/styles";
+
+body {
+  font-size: 12px;
+}
 body, body * {
   box-sizing: border-box;
 }
@@ -14,4 +20,14 @@ body, body * {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.widget-list {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  @include scrollbar(5px);
 }

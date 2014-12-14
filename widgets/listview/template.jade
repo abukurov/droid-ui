@@ -1,0 +1,7 @@
+ul.listview
+  li.list-item(ng-repeat="num in [] | range:model.itemsCount")
+    div(ng-if="model.tpl === 'basic'")
+      div item {{ num }}
+    div(ng-if="model.tpl === 'subtitle'")
+      div.subtitle Sub item {{ num }}
+      div item {{ num }}

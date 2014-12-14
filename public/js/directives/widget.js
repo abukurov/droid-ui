@@ -7,7 +7,7 @@ module.exports = angular.module('widgets', [])
     return {
       restrict: 'A',
       scope: {
-        ngModel: '=model'
+        model: '=model'
       },
       templateUrl: function (element, attrs) {
         return '/templates/' + attrs.type;

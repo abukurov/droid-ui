@@ -1,21 +1,13 @@
 extends _layout
+include ./mixins/configuration
 include mixins/device
 
 block content
   div(ng-controller="mockup")
-    | Hello, {{ name }}
+    ul.all-widgets
+      li(ng-repeat="widget in allWidgets")
+        div(list-item-dnd="{{widget}}") {{ widget.type}}
 
+    +config()
     .device-wrapper
       +device()
-
-    div(
-      list-item-dnd="5",
-    ) 5
-    ul(list-dnd="widgets")
-      li(ng-repeat="widget in widgets")
-        widget(
-          dynamic-widget="widget.type",
-          list-item-dnd="{{ widget }}",
-          list-item-dnd-moved="onWidgetMoved($index)",
-          list-item-dnd-hide=true
-        ) {{ widget.value  }}

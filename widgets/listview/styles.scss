@@ -1,0 +1,26 @@
+@import "../../public/sass/variables";
+
+.listview {
+  padding: 0;
+  margin: 0;
+
+  .list-item {
+    list-style: none;
+    padding: 1em .5em;
+    color: $android-text-color;
+    border-top: 1px solid $android-light-border-color;
+    border-bottom: 1px solid $android-dark-border-color;
+
+    .subtitle {
+      font-size: 1.2em;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
