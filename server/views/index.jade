@@ -1,5 +1,6 @@
 extends _layout
 include ./mixins/configuration
+include mixins/device
 
 block content
   div(ng-controller="mockup")
@@ -8,15 +9,5 @@ block content
         div(list-item-dnd="{{widget}}") {{ widget.type}}
 
     +config()
-    |{{selectedWidget}}
-    ul(list-dnd="widgets", style="width:320px; height: 480px; background: #353535;;margin: 0;padding:0;")
-      li(ng-repeat="widget in widgets", style="list-style:none")
-        widget(
-          dynamic-widget="widget.type",
-          ng-click="onWidgetSelect($index)",
-          list-item-dnd="{{ widget }}",
-          list-item-dnd-moved="onWidgetMoved($index)",
-          list-item-dnd-hide=true,
-          model="widget"
-        ) {{ widget.value }}
-    |{{widgets}}
+    .device-wrapper
+      +device()
