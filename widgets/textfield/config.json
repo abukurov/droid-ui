@@ -1,0 +1,28 @@
+{
+  "value": {
+    "name": "Input value",
+    "defaultValue": "",
+    "type": "text"
+  },
+  "placeholder": {
+    "name": "Placeholder",
+    "defaultValue": "",
+    "type": "text"
+  },
+  "type": {
+    "name": "Input type",
+    "type": "select",
+    "options": [{
+      "name": "text",
+      "value": "text"
+    }, {
+      "name": "password",
+      "value": "password"
+    }]
+  },
+  "labelText": {
+    "name": "Label text",
+    "defaultValue": "Label",
+    "type": "text"
+  }
+}

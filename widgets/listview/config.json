@@ -1,0 +1,18 @@
+{
+  "itemsCount": {
+    "name": "Items count",
+    "defaultValue": 10,
+    "type": "text"
+  },
+  "tpl": {
+    "name": "Template",
+    "type": "select",
+    "options": [{
+      "name": "basic", "value": "basic"
+    }, {
+      "name": "with subtitle", "value": "subtitle"
+    }, {
+      "name": "with thumbnail", "value": "thumbnail"
+    }]
+  }
+}
