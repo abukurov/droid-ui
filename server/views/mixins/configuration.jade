@@ -8,3 +8,6 @@ mixin config()
             input.input(ng-if="config.type === 'text'", ng-model="selectedWidget.model[fieldName]")
             select.input(ng-if="config.type === 'select'", ng-model="selectedWidget.model[fieldName]")
               option(ng-repeat="option in config.options", value="{{option.value}}") {{option.name}}
+            label.checkbox(ng-if="config.type === 'boolean'")
+              input(type="checkbox",ng-model="selectedWidget.model[fieldName]")
+              | {{config.name}}

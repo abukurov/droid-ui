@@ -6,21 +6,28 @@
 
   .list-item {
     list-style: none;
-    padding: 1em .5em;
+    padding: .5em .75em;
     color: $android-text-color;
-    border-top: 1px solid $android-light-border-color;
-    border-bottom: 1px solid $android-dark-border-color;
 
-    .subtitle {
-      font-size: 1.2em;
+    @include horizontal-border($android_bg);
+    font-size: 1.2em;
+
+    sub {
+      font-size: .8em;
+      color: $android-border-color;
     }
 
-    &:first-child {
-      border-top: none;
-    }
+    .thumbnail {
+      width: 100%;
 
-    &:last-child {
-      border-bottom: none;
+      .img-wrapper {
+        width: 1%;
+        padding-right: .5em;
+
+        img {
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+        }
+      }
     }
   }
 }

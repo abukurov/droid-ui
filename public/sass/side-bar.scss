@@ -33,8 +33,13 @@ $side-bar-width: 300px;
       margin: 0;
       padding: 0;
 
+      li:first-letter {
+        text-transform:uppercase;
+      }
+
       li {
-        padding: 0.2em 0.5em;
+        padding: 0.5em 0.75em;
+        @include horizontal-border($android_side_bar_body_color);
       }
     }
 
