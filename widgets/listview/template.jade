@@ -1,7 +1,15 @@
 ul.listview
   li.list-item(ng-repeat="num in [] | range:model.itemsCount")
-    div(ng-if="model.tpl === 'basic'")
-      div item {{ num }}
-    div(ng-if="model.tpl === 'subtitle'")
-      div.subtitle Sub item {{ num }}
-      div item {{ num }}
+    div.list-inner(ng-if="model.tpl === 'basic'")
+      span Item {{ num }}
+    div.list-inner(ng-if="model.tpl === 'subtitle'")
+      div Item {{ num }}
+      sub Sub item {{ num }}
+    div.list-inner(ng-if="model.tpl === 'thumbnail'")
+      table.thumbnail
+        tr
+          td.img-wrapper
+            img(src="http://lorempixel.com/50/50/cats?q={{num}}")
+          td.text-wrapper
+            div Item {{ num }}
+            sub Sub item {{ num }}

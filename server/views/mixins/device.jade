@@ -9,9 +9,10 @@ mixin device
         ul.widget-list(list-dnd="widgets")
           li(ng-repeat="widget in widgets", style="list-style:none")
             widget(
+              tabindex="0",
               ng-class="{selected: selectedWidget.model === widget}",
               dynamic-widget="widget.type",
-              ng-click="onWidgetSelect($index)",
+              ng-focus="onWidgetSelect($index)",
               list-item-dnd="{{ widget }}",
               list-item-dnd-moved="onWidgetMoved($index)",
               list-item-dnd-hide=true,

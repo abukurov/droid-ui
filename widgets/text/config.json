@@ -1,6 +1,6 @@
 {
-  "value": {
-    "name": "text value",
+  "text": {
+    "name": "Text",
     "defaultValue": "some text",
     "type": "text"
   }
