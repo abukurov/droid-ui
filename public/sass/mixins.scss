@@ -12,3 +12,19 @@
   -o-transition: $transition-property $transition-time $method;
   transition: $transition-property $transition-time $method;
 }
+
+@mixin scrollbar($width) {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: $width / 2;
+  }
+
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $width / 2;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.65);
+  }
+}
