@@ -1,0 +1,7 @@
+{
+  "value": {
+    "name": "Text",
+    "defaultValue": "Press me",
+    "type": "text"
+  }
+}
