@@ -1,8 +1,10 @@
 @import "../components/normalize-scss/normalize";
-@import "./variables";
+@import "../components/font-awesome/scss/font-awesome";
 @import "./mixins";
+@import "./variables";
 
 @import "./device";
+@import "./side-bar";
 
 @import "../../widgets/textfield/styles";
 @import "../../widgets/listview/styles";

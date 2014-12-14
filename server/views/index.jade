@@ -1,6 +1,7 @@
 extends _layout
 include ./mixins/configuration
 include mixins/device
+include mixins/side-bar
 
 block content
   div(ng-controller="mockup")
@@ -11,3 +12,17 @@ block content
     +config()
     .device-wrapper
       +device()
+
+    +side-bar()
+
+    div(
+      list-item-dnd="5",
+    ) 5
+    ul(list-dnd="widgets")
+      li(ng-repeat="widget in widgets")
+        widget(
+          dynamic-widget="widget.type",
+          list-item-dnd="{{ widget }}",
+          list-item-dnd-moved="onWidgetMoved($index)",
+          list-item-dnd-hide=true
+        ) {{ widget.value  }}
