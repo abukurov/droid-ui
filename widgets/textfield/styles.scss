@@ -1,0 +1,52 @@
+@import "../../public/sass/variables";
+
+.field {
+  padding: 0.6em;
+  min-height: 2.5em;
+  .label {
+    border-bottom: 1px solid $android_border_color;
+    display: block !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $android_border_color;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0.3em;
+  }
+  .outer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    .input-border {
+      border: 1px solid;
+      border-color: transparent $android_outer_border_color $android_outer_border_color $android_outer_border_color;
+      left: 1px;
+      right: 1px;
+      background: $android_background_color;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 4px;
+    }
+    input.text {
+      width: 100%;
+      font-size: 16px;
+      background: transparent;
+      padding: .4em;
+      min-height: 2.5em;
+      border-width: 0;
+      -webkit-appearance: none;
+      color: white;
+      -webkit-text-fill-color: white !important;
+      &:focus {
+        outline: none;
+      }
+
+      &:focus + .input-border {
+        border-color: transparent $android_border_color $android_border_color $android_border_color;
+      }
+    }
+  }
+}
